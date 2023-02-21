@@ -10,21 +10,9 @@
 
 int _isalpha(int c)
 {
-	int b;
-
-	b = _isalpha('H');
-	_putchar(b + '0');
-
-	b = _isalpha('o');
-	_putchar(b + '0');
-
-	b = _isalpha('1');
-	_putchar(b + '0');
-
-	b = _isalpha(';');
-	_putchar(b + '0');
-
-	_putchar('\n');
-
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
-
